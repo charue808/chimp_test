@@ -7,6 +7,6 @@ Feature: Search the web
 
 	@watch
 	Scenario: Search for Xolv.io
-		Given I am on Google
+		Given I am on Yahoo
 		When I search for "Xolv.io"
 		Then I see "Xolv.io"

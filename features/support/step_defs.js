@@ -1,7 +1,7 @@
 module.exports = function() {
 
-	this.Given(/^I am on Google$/, function () {
-  	browser.url('http://google.com');
+	this.Given(/^I am on Yahoo$/, function () {
+  	browser.url('http://yahoo.com');
 	});
 
 	this.When(/^I search for "([^"]*)"$/, function (searchTerm) {
