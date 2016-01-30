@@ -5,7 +5,7 @@ module.exports = function() {
 	});
 
 	this.When(/^I search for "([^"]*)"$/, function (searchTerm) {
-  	browser.setValue('input[name="q"]', searchTerm);
+  	browser.setValue('input[name="p"]', searchTerm);
   	browser.keys(['Enter']);
 	});
 
