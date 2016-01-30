@@ -1,8 +1,7 @@
 module.exports = function() {
 
 	this.Given(/^I am on Google$/, function () {
-  // Write the automation code here
-  pending();
+  	browser.url('http://google.com');
 	});
 
 	this.When(/^I search for "([^"]*)"$/, function (arg1) {
@@ -14,5 +13,5 @@ module.exports = function() {
   // Write the automation code here
   pending();
 	});
-	
+
 };
