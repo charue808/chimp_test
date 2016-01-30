@@ -4,8 +4,9 @@ module.exports = function() {
   	browser.url('http://yahoo.com');
 	});
 
-	this.When(/^I search for "([^"]*)"$/, function ("hello") {
-  	browser.setValue('input[name="p"]', "hello");
+	this.When(/^I search for "([^"]*)"$/, function (searchTerm) {
+	var searchTerm = "hello";
+  	browser.setValue('input[name="p"]', searchTerm );
   	browser.keys(['Enter']);
 	});
 
