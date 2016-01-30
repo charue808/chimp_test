@@ -4,14 +4,13 @@ module.exports = function() {
   	browser.url('http://google.com');
 	});
 
-	this.When(/^I search for "([^"]*)"$/, function (arg1) {
-  // Write the automation code here
-  pending();
+	this.When(/^I search for "([^"]*)"$/, function (searchTerm) {
+  	browser.setValue('input[name="q"]', searchTerm);
+  	browser.keys(['Enter']);
 	});
 
-	this.Then(/^I see "([^"]*)"$/, function (arg1) {
-  // Write the automation code here
-  pending();
+	this.Then(/^I see "([^"]*)"$/, function (link) {
+  	browser.waitForExist('a=' + link);
 	});
 
 };
